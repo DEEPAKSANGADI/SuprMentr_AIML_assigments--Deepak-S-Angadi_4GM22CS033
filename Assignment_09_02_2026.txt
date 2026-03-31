@@ -1,0 +1,35 @@
+ 10 Real-Life AI Applications Used Daily
+Artificial Intelligence (AI) and Machine Learning (ML) are used in many applications that we interact with every day. ML works by learning patterns from data and making predictions or decisions automatically.
+1) Smartphone Face Unlock
+AI is used in face unlock systems to recognize the user’s face.
+ML models learn facial features like eyes, nose shape, and face structure, then compare them with stored data to unlock the phone.
+2) Video Recommendations
+Apps like YouTube and Netflix use AI to recommend videos and movies.
+ML analyzes watch history, liked content, and user behavior to suggest similar content.
+3) Google Maps Navigation
+Google Maps uses AI for route optimization and traffic prediction.
+ML studies real-time GPS data, traffic patterns, and previous route history to suggest the fastest path.
+4) Spam Email Detection
+Email services use AI to separate spam from useful emails.
+ML classification algorithms are trained on thousands of emails to detect spam keywords and suspicious patterns.
+ 5) Voice Assistants
+Voice assistants like Google Assistant and Siri use AI.
+ML converts voice into text, understands the meaning, and responds accordingly.6) Social Media Feed
+Apps like Instagram use AI to show personalized posts.
+ML studies likes, shares, comments, and watch time to rank posts in the feed.
+7) Online Shopping Suggestions
+Shopping apps like Amazon recommend products using AI.
+ML checks browsing history, previous purchases, and customer preferences to suggest items.
+8) Banking Fraud Detection
+Banks use AI to detect suspicious transactions.
+ML models identify unusual spending behavior and alert users if fraud is suspected.
+9) Auto-Correct and Predictive Text
+Mobile keyboards use AI for spelling correction and next-word prediction.
+ML learns from typing patterns and predicts the most likely word.
+10) Chatbots and Customer Support
+AI chatbots are used in websites and apps for customer support.
+ML and NLP help understand user questions and provide automatic responses.
+Example: ChatGPT
+ Conclusion
+AI and ML are now a part of our daily life. From unlocking phones to getting recommendations and using navigation apps, ML helps systems learn from data and improve user experience.
+

@@ -1,0 +1,43 @@
+1. The Tokenization Trap (Character Counting)
+LLMs do not see individual letters; they see tokens (e.g., the word "computing" might be one token, while "intersections" might be two). Therefore, asking them to perform character-level analysis almost always results in a confident, incorrect answer.
+
+The Prompt:
+"Count the exact number of times the letter 'p' appears in this sentence: 'High-performance computing relies on parallel processing paradigms to push past physical processor limits.'"
+
+Expected LLM Result: The LLM will usually give you a number between 7 and 12, and it will often confidently list out the words containing 'p' but still get the final mathematical count wrong. (The actual answer is 12).
+
+2. The Negative Constraint (Lipograms)
+Because LLMs are trained to generate the most statistically probable next word, they struggle immensely when you forbid them from using common words or letters. The statistical weight of common phrasing overrides the negative constraint.
+
+The Prompt:
+"Write a brief, two-paragraph explanation of how to conduct a road safety accident investigation. However, you are strictly forbidden from using any word that contains the letter 'e'. If you use the letter 'e', you fail."
+
+Expected LLM Result:
+The LLM will start strong, perhaps saying "A crash inquiry starts with...", but within a few sentences, the predictive engine will slip up and output words like "the," "street," or "vehicle." It cannot plan its vocabulary far enough in advance to avoid the most common letter in the English alphabet.
+
+3. Spatial Reasoning & ASCII Art
+LLMs have no visual cortex. They understand the concept of shapes and space through text descriptions, but they cannot actually "see" spatial relationships.
+
+The Prompt:
+"Draw an ASCII art representation of a four-way intersection. Place a 'car' (represented by the symbol '@') in the center of the intersection, and place a 'pedestrian' (represented by the symbol 'P') on the top-right corner. Make sure the roads are clearly marked with dashes."
+
+Expected LLM Result:
+The LLM will generate a jumbled, asymmetrical mess of dashes, plus signs, and spaces. The @ and P will likely be placed randomly, often floating outside the "roads," because the model doesn't understand the 2D coordinate space of the text box it is generating.
+
+4. The "Theory of Mind" State Tracking
+If you move objects around in a convoluted way, the LLM will lose track of the physical state of the objects because it relies on the semantic proximity of words in the prompt rather than a mental 3D model.
+
+The Prompt:
+"I have a glass jar, a metal box, and a plastic cup. I put a GPU inside the glass jar. I move the glass jar inside the metal box. I take the metal box to the kitchen. I take the glass jar out of the metal box and leave the jar in the kitchen. I take the metal box to the living room. I put the plastic cup inside the metal box. Where is the GPU, and what container is it currently touching?"
+
+Expected LLM Result:
+The LLM will often get confused by the nested containers. It might say the GPU is in the living room (because the metal box was moved there), or it might say it's touching the metal box, failing to track that the GPU remained inside the glass jar which was left in the kitchen.
+
+5. The Math Paradox (The "Apples" Riddle)
+LLMs are highly susceptible to pattern matching. If a prompt looks like a classic riddle, the LLM will often output the answer to the classic riddle, even if you changed the numbers or the logic.
+
+The Prompt:
+"It takes 3 independent OpenMP threads exactly 3 minutes to process 3 arrays. How many minutes will it take 100 independent OpenMP threads to process 100 arrays, assuming zero overhead and perfectly parallel execution?"
+
+Expected LLM Result:
+The LLM will often confidently answer "100 minutes," falling into the linguistic trap of matching the numbers. (The correct answer is 3 minutes, as they are processing in parallel).

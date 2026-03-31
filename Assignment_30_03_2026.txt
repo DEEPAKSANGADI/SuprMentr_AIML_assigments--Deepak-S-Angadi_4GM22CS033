@@ -1,0 +1,40 @@
+1. The Resume Prompt
+Weak Prompt:
+
+"Write a resume for a software developer."
+
+Why it’s weak: It gives the AI no context about your actual skills, experience level, or the specific type of role you want. The output will be generic, filled with placeholders, and likely unusable without heavy rewriting.
+
+Strong Prompt:
+
+"Act as an expert technical recruiter. I am applying for an entry-level Software Developer role. Review the following draft bullet points and rewrite them to heavily emphasize my academic and practical experience with Python, high-performance computing (CUDA, MPI), and data structures. Quantify the impact where possible, begin each bullet with a strong action verb, and keep each point under two lines."
+
+[Insert your draft bullet points here]
+
+Why it’s strong: It assigns a specific persona (technical recruiter), states the exact target (entry-level Software Developer), outlines the specific technical skills to highlight, and dictates the formatting constraints (action verbs, under two lines).
+
+2. The Business Idea Prompt
+Weak Prompt:
+
+"Give me a good business idea."
+
+Why it’s weak: "Good" is subjective. The AI will likely output highly saturated, generic ideas (like starting a dropshipping store or a social media agency) because it has no boundaries or industries to focus on.
+
+Strong Prompt:
+
+"Act as a startup incubator mentor. Propose three highly technical B2B SaaS business ideas focused on traffic data analysis, intersection design, and road safety optimization. For each idea, provide a clear target audience, the core problem it solves, a potential recurring revenue model, and the biggest technical hurdle to building the MVP (Minimum Viable Product). Format the output as a table."
+
+Why it’s strong: It narrows the focus to a highly specific, niche industry. It asks for a specific business model (B2B SaaS) and requires the AI to think critically about potential roadblocks (technical hurdles), rather than just giving a sunny, overly optimistic pitch. Finally, it specifies the exact output format (a table).
+
+3. The Study Plan Prompt
+Weak Prompt:
+
+"Make a study plan for an AWS exam."
+
+Why it’s weak: It doesn't specify which of the many AWS exams you are taking, how much time you have, or what your ultimate career goal is. The AI will guess your timeline and likely provide a very vague outline.
+
+Strong Prompt:
+
+"Act as a senior cloud architect. Create a detailed, week-by-week study schedule for the AWS Certified Solutions Architect Associate (SAA-C03) certification. I have exactly 3 months to prepare. My ultimate goal is not just to pass the exam, but to build the deep, practical knowledge required to pass technical interviews at MAANG-level companies. Include specific hands-on lab topics for each week and dedicated time for practice exams in the final month."
+
+Why it’s strong: It explicitly names the certification and version (SAA-C03), provides a strict timeline (3 months), and states a high-bar ultimate goal (MAANG interviews), which tells the AI to prioritize deep architectural understanding over simple rote memorization.

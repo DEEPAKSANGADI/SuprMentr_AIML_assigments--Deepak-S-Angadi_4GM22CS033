@@ -1,0 +1,89 @@
+ Mini Project Proposal
+
+ Title: AI-Powered Course Recommendation and Price Alert System
+
+1. Problem Statement
+
+Students often face difficulty in identifying the most suitable online courses, study materials, notes, cheat sheets, and learning roadmaps from multiple platforms such as Udemy, Coursera, YouTube, Meta Platforms Learning, and Infosys Springboard. Since resources are spread across different platforms, students spend significant time comparing course quality, price, and relevance.
+
+The proposed system aims to develop an intelligent web-based platform that recommends the best courses and learning resources based on user search keywords, browsing behavior, and previous interactions. The system will also track course prices and notify users when the course reaches the lowest available discount price.
+
+2. Dataset
+
+The dataset will be created by collecting data from major learning platforms and publicly available educational resources.
+
+Data sources include:
+
+* Udemy
+* Coursera
+* YouTube
+* Meta Platforms Learning
+* Infosys Springboard
+* GeeksforGeeks
+
+Dataset attributes:
+
+* Course ID
+* Course name
+* Platform name
+* Category / subject
+* Instructor name
+* Description
+* Course rating
+* Number of reviews
+* Price
+* Discount price
+* Duration
+* Difficulty level
+* Keywords / tags
+* User search history
+* Click count / viewed courses
+
+The dataset can be stored in CSV format or database tables.
+
+
+
+ 3. Algorithm / Methodology
+
+The system will use Machine Learning-based recommendation techniques, mainly the **K-Nearest Neighbors (KNN) algorithm**.
+
+Algorithms used:
+
+K-Nearest Neighbors (KNN):
+  Used to recommend courses similar to the user’s searched course or previously viewed courses by finding the nearest matching courses based on features such as category, keywords, ratings, and price.
+
+TF-IDF (Term Frequency–Inverse Document Frequency):
+  Used to convert course descriptions and keywords into numerical vectors.
+
+Cosine Similarity:
+  Used along with KNN to measure similarity between courses.
+
+Price Tracking Logic:
+  Compares current course price with historical lowest price and triggers notifications.
+
+Working Process:
+
+1. User enters a keyword or course name
+2. Course data is preprocessed
+3. TF-IDF converts text into vectors
+4. KNN finds the top nearest similar courses
+5. System recommends top 5–10 relevant courses
+6. Notification is sent when price drops
+
+This approach helps in generating personalized and accurate recommendations.
+
+
+
+ 4. Expected Output
+
+The expected output of the system includes:
+
+* Top recommended courses based on search and user behavior
+* Free and paid resource suggestions
+* Notes and cheat sheets
+* Personalized study roadmap
+* Detailed course review summary
+* Price drop alert notification system
+* Better and faster discovery of learning resources
+
+The final deliverable will be a responsive website that acts as an AI-based learning recommendation platform.
