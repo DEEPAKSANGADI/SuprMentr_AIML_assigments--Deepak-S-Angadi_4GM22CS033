@@ -1,0 +1,35 @@
+Five Uses of Face/Object Detection
+1. 	Security & Surveillance
+• 	Detect suspicious activity in public spaces.
+• 	Identify unauthorized access in restricted areas.
+2. 	Healthcare
+• 	Monitor patient movements (e.g., fall detection in elderly care).
+• 	Track medical instruments during surgery.
+3. 	Retail & Marketing
+• 	Analyze customer demographics and behavior.
+• 	Detect product placement and stock levels on shelves.
+4. 	Automotive
+• 	Driver monitoring systems (detect drowsiness or distraction).
+• 	Object detection for autonomous driving (pedestrians, vehicles, traffic signs).
+5. 	Smart Devices & Applications
+• 	Face unlock on smartphones.
+• 	Object recognition in AR apps (e.g., identifying furniture or plants).
+
+ Designed Solution: Driver Drowsiness Detection System
+Problem
+Road accidents often occur due to driver fatigue. A system is needed to detect drowsiness and alert the driver before an accident happens.
+Solution Design
+• 	Input: Real-time video feed from a camera mounted on the dashboard.
+• 	Process:
+• 	Use face detection to locate the driver’s face.
+• 	Apply eye detection to monitor blinking frequency and eye closure duration.
+• 	Track head position to detect nodding or slumping.
+• 	Algorithm:
+• 	If eyes remain closed for more than 2 seconds or blinking rate drops significantly → classify as drowsy.
+• 	If head tilts forward or sideways beyond a threshold → classify as drowsy.
+• 	Output:
+• 	Trigger an audio alarm or seat vibration to wake the driver.
+• 	Optionally, send a notification to connected devices (fleet management system, family app).
+• 	Enhancements:
+• 	Integrate with vehicle sensors (speed, lane departure).
+• 	Use infrared cameras for night driving.
